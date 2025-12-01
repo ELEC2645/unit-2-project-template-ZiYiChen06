@@ -74,19 +74,19 @@ static void select_menu_item(int input)
 {
     switch (input) {
         case 1:
-            menu_item_1();
+            convert_frequency();
             go_back_to_main();
             break;
         case 2:
-            menu_item_2();
+            convert_temperature();
             go_back_to_main();
             break;
         case 3:
-            menu_item_3();
+            convert_dbm_mw();
             go_back_to_main();
             break;
         case 4:
-            menu_item_4();
+            explanation_mode();
             go_back_to_main();
             break;
         default:
@@ -97,15 +97,12 @@ static void select_menu_item(int input)
 
 static void print_main_menu(void)
 {
-    printf("\n----------- Main menu -----------\n");
-    printf("\n"
-           "\t\t\t\t\t\t\n"
-           "\t1. Menu item 1\t\t\n"
-           "\t2. Menu item 2\t\t\n"
-           "\t3. Menu item 3\t\t\n"
-           "\t4. Menu item 4\t\t\n"
-           "\t5. Exit\t\t\t\t\n"
-           "\t\t\t\t\t\t\n");
+    printf ("\n----------- Engineering Unit Converter -----------\n");
+    printf ("\t1. Frequency Conversion (Hz <-> rad/s\n");
+    printf ("\t2. Temperature Conversion (C <-> F\n");
+    printf ("\t3. Power Conversion(dBm <-> mW)\n");
+    printf ("\t4.Explanation Mode \n");
+    printf ("\t5. Exit\n\n");
     printf("---------------------------------------------\n");
 }
 

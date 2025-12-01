@@ -1,26 +1,25 @@
 #include <stdio.h>
 #include "funcs.h"
 
-void menu_item_1(void) {
-    printf("\n>> Menu 1\n");
-    printf("\nSome code here does something useful\n");
-    /* you can call a function from here that handles menu 1 */
+void convert_frequency(void) {
+    printf("\n[Frequency_Conversion]\n");
+    printf("This feature will convert between HZ and rad/s.\n");
 }
 
-void menu_item_2(void) {
-    printf("\n>> Menu 2\n");
-    printf("\nSome code here does something useful\n");
+void convert_temperature(void) {
+    printf("\n[Temperature Conversion]\n");
+    printf("The feature will convert between Celsius and Fahrenheit.\n");
     /* you can call a function from here that handles menu 2 */
 }
 
-void menu_item_3(void) {
-    printf("\n>> Menu 3\n");
-    printf("\nSome code here does something useful\n");
+void convert_dbm_mw(void) {
+    printf("\n[Power Conversion]\n");
+    printf("This feature will convert between dBm and mW.\n");
     /* you can call a function from here that handles menu 3 */
 }
 
-void menu_item_4(void) {
-    printf("\n>> Menu 4\n");
-    printf("\nSome code here does something useful\n");
+void explanation_mode(void) {
+    printf("\n[explanation mode]\n");
+    printf("This feature will provide explanations.\n");
     /* you can call a function from here that handles menu 4 */
 }
