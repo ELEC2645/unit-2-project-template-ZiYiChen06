@@ -1,5 +1,8 @@
 [![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=21637259)
 # ELEC2645 Unit 2 Project Template
+
+     Unit converter with context 
+
 This project implements a menu-driven engineering unit converter written in C.
 The aim is to provide a simple command-line tool that performs several calculations commonly used in electronic and electrical engineering.
 The program is divided into two main components:
@@ -13,9 +16,9 @@ Uses the relationship between ordinary frequency and angular frequency:
 
 rad/s = 2πf
 
-Hz = rad/s ÷ (2π)
+Hz = (rad/s) /(2*pi)
 
-(2). Temperature Conversion (°C ↔ °F)
+(2). Temperature Conversion (°C <-> °F)
 
 Based on standard linear formulas:
 
@@ -23,7 +26,7 @@ Based on standard linear formulas:
 
 °C = (°F − 32) × 5/9
 
-(3). Power Conversion (dBm ↔ mW)
+(3). Power Conversion (dBm <-> mW)
 
 Useful in communication and RF systems:
 
@@ -42,7 +45,12 @@ Computes the cutoff frequency of a first-order RC filter:
 fc = 1 / (2*pi*R*C)
 
 2. How to Compile and Run the Program
-You can  use to force a rebuild using the provided .gcc main.c funcs.c -o main.out -lm 
+The program main.c needs compiling before it can run.
 
-Then run the code with ./main.out
+ In the terminal you can type gcc main.c -o main.out -lm 
+ and then ./main.out to run the new program.
+
+3. Author
+Ziyi Chen
+SID:201800134
 
