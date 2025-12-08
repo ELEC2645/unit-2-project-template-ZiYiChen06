@@ -124,6 +124,62 @@ void convert_temperature(void) {
 }
 
 void explanation_mode(void) {
-    printf("\n[explanation mode]\n");
-    printf("This feature will provide explanations.\n");
+    int choice;
+    printf("\n=== Unit Explanations ===\n");
+    printf("1. Hz \n");
+    printf("2. rad/s \n");
+    printf("3. dBm \n");
+    printf("4. mW \n");
+    printf("5. Temperature Units \n");
+    printf("Enter your choice: ");
+
+    scanf("%d", &choice);
+
+    printf("----------\n");
+
+    switch (choice) {
+
+        case 1:
+            printf("[Hz]\n");
+            printf("Hz indicates how many cycles happen in one second.\n");
+            printf("Common in AC signals, filters, and digital systems.\n");
+            printf("Formula: rad/s = 2 * pi * Hz\n");
+            break;
+
+        case 2:
+            printf("[rad/s]\n");
+            printf("rad/s shows how fast something rotates or oscillates.\n");
+            printf("Used in control systems and mechanical motion.\n");
+            printf("Formula: Hz = rad/s / (2π)\n");
+            break;
+
+        case 3:
+            printf("[dBm]\n");
+            printf("dBm is a logarithmic unit referenced to 1 mW.\n");
+            printf("Used in wireless communication and RF circuits.\n");
+            printf("Formula: mW = 10^(dBm / 10)\n");
+            break;
+
+        case 4:
+            printf("[mW]\n");
+            printf("mW is a linear unit that measures power.\n");
+            printf("Used in electronics, sensors, and communication systems.\n");
+            printf("Formula: dBm = 10 * log10(mW)\n");
+            break;
+
+        case 5:
+            printf("[Temperature]\n");
+            printf("°C and °F are units for measuring temperature.\n");
+            printf("Used in sensors and environmental monitoring.\n");
+            printf("Formulas:\n");
+            printf("  °F = (°C * 9/5) + 32\n");
+            printf("  °C = (°F - 32) * 5/9\n");
+            break;
+
+        default:
+            printf("Invalid choice.\n");
+            break;
+    }
+
+    printf("------------\n");
 }
