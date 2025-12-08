@@ -183,3 +183,22 @@ void explanation_mode(void) {
 
     printf("------------\n");
 }
+void rc_filter_helper(void)
+{
+    double R, C, fc;
+
+    printf("\n[RC Filter Helper]\n");
+    printf("Enter resistance R: ");
+    if (scanf("%lf", &R) != 1 || R <= 0) {
+    printf("Invalid resistance value.\n");
+        return;
+    }
+
+    printf("Enter capacitance C : ");
+    if (scanf("%lf", &C) != 1 || C <= 0) {
+    printf("Invalid capacitance value.\n");
+        return;
+    }
+    fc = 1.0 / (2.0 * pi * R * C);
+    printf("Cutoff Frequency: %.2f Hz\n", fc);
+}

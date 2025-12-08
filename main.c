@@ -89,6 +89,10 @@ static void select_menu_item(int input)
             explanation_mode();
             go_back_to_main();
             break;
+        case 5:
+            rc_filter_helper();
+            go_back_to_main();
+            break;
         default:
             printf("Bye!\n");
             exit(0);
@@ -102,7 +106,8 @@ static void print_main_menu(void)
     printf ("\t2. Temperature Conversion (C <-> F\n");
     printf ("\t3. Power Conversion(dBm <-> mW)\n");
     printf ("\t4.Explanation Mode \n");
-    printf ("\t5. Exit\n\n");
+    printf ("\t5. RC Filter Helper (Cutoff Frequency)\n");
+    printf ("\t6. Exit\n\n");
     printf("---------------------------------------------\n");
 }
 
