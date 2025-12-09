@@ -14,7 +14,7 @@ main.c controls the menu system, while funcs.c contains the implementation of al
 
 Uses the relationship between ordinary frequency and angular frequency:
 
-rad/s = 2πf
+rad/s = 2*pi*f
 
 Hz = (rad/s) /(2*pi)
 
