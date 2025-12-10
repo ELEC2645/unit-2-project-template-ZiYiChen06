@@ -47,8 +47,8 @@ fc = 1 / (2*pi*R*C)
 2. How to Compile and Run the Program
 The program main.c needs compiling before it can run.
 
- In the terminal you can type gcc main.c -o main.out -lm 
- and then ./main.out to run the new program.
+ In the terminal you can type gcc main.c funcs.c -o main.out -lm
+ and then  ./main.out   to run the new program.
 
 3. Author
 Ziyi Chen
