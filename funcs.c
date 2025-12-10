@@ -150,7 +150,7 @@ void explanation_mode(void) {
             printf("[rad/s]\n");
             printf("rad/s shows how fast something rotates or oscillates.\n");
             printf("Used in control systems and mechanical motion.\n");
-            printf("Formula: Hz = rad/s / (2π)\n");
+            printf("Formula: Hz = rad/s / (2*pi)\n");
             break;
 
         case 3:
